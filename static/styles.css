@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background for the page */
+}
+
+#chatbot-container {
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #1a1a1a; /* Darker shade for chatbot container */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#chatbox {
+    height: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #333; /* Darker border to match the theme */
+    background-color: #1a1a1a; /* Match container color */
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #ff4500; /* Orangered for user messages */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #333; /* Dark grey for bot messages */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+#user-input {
+    display: flex;
+    padding: 10px;
+    background-color: #1a1a1a; /* Match container color */
+}
+
+#user-message {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ff4500; /* Orangered border for input field */
+    border-radius: 4px;
+    background-color: #333; /* Dark grey input field */
+    color: white;
+}
+
+#send-button {
+    background-color: #ff4500; /* Orangered for send button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
